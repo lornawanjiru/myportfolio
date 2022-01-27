@@ -1,10 +1,20 @@
+/* .center{
+  padding: 0 20% 0 20%;
+} */
 .logo{
   font-family: "Fondamento";
-  color: purple;
+  color: rgb(208, 208, 208);
   font-size: 1.5em;
-  float: right;
   font-weight: 900;
-  margin-right: 35%;
+  margin-top: 1.5%;
+}
+.hidelogo{
+  display: none;
+  font-family: "Fondamento";
+  color: rgb(208, 208, 208);
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-top: 0;
 }
 .nav{
   padding: 3%;
@@ -20,7 +30,7 @@
   line-height: 2.5;
 }
 .set{
-  margin-top: 3.5%;
+  line-height: 2;
 }
 .navmenu{
   width: 200px;
@@ -32,13 +42,15 @@
   background-color: purple;
   z-index: 1000;
   color: #eee;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 15%; 
   overflow-x: hidden;
   
 }
 .navmenu a{
+ 
   transition: 0.3s;
+  transition: color 650ms;
 }
 .navmenu.active {
   left: 5px;
@@ -52,38 +64,53 @@
   transition: .5s;
 }
 .navmenu a:hover{
-  text-transform:uppercase ;
+  color: purple;
   font-weight: 600;
+  border-radius: 8px;
+  background-color: #eee;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 @media only screen and (min-width: 640px){
+  .hidelogo{
+    display: inherit;
+  }
   .set{
     display: none;
   }
+  .nav{
+    width: 100%; 
+  }
   .logo{
-    float: center;
-    margin-right: 0;
+    display: none;
   }
   .navmenu{
     width: 100%;
-    top: 0;
-    height: auto;
-    margin-top: 4.8%;
+    height: auto;  
     position: relative;
-    flex-direction: row;
+    display: flex; 
     background-color: inherit;
-    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    
+  }
+  .navmenu.inactive{
+
+    left: 0;
+    transition: none;
   }
   .navmenu li{
-    line-height: 6rem;
+    line-height: 0;
     position: relative;
   }
   .navmenu a{
     display: block;
-    padding: 0 1.5em 0 0;
+    padding: .5em;
     transition: color 650ms;
   }
   .icon{
     line-height: 2.5em;
+    margin-top: 10%;
+    
   }
   .social{
     margin: auto;
@@ -94,4 +121,7 @@
     border-radius: 0;
     box-shadow: none;
   }
+}
+@media only screen and (min-width: 840px){
+  
 }
