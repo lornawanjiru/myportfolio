@@ -3,9 +3,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Aileron";
-  background-color: #202124;
+  background-color: aliceblue;
+  /* background-color: #202124; */
 }
-
+hr{
+ width: 70%;
+ color: #eee;
+ border-width: .5px;
+}
 a {
   color: inherit;
   text-decoration: none;

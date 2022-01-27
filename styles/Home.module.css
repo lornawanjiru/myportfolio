@@ -26,20 +26,34 @@
   width: 200px;
   text-align: center;
   position: fixed;
-  display: none;
+  left: -200px;
   margin-right: 10%;
   flex-direction: column;
   background-color: purple;
   z-index: 1000;
   color: #eee;
   font-size: 1.2em;
-  margin-top: 15%;
- 
+  margin-top: 15%; 
+  overflow-x: hidden;
+  
+}
+.navmenu a{
+  transition: 0.3s;
 }
 .navmenu.active {
+  left: 5px;
+  transition: 1s;
   display: inline;
   border-radius: 8px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.navmenu.inactive{
+  left: -200px;
+  transition: .5s;
+}
+.navmenu a:hover{
+  text-transform:uppercase ;
+  font-weight: 600;
 }
 @media only screen and (min-width: 640px){
   .set{
