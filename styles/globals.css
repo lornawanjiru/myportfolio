@@ -29,6 +29,7 @@ nav{
   align-items: center;
   overflow: hidden;
 }
+
 @media only screen and (min-width: 640px){
   header{
     overflow: hidden;
@@ -37,8 +38,13 @@ nav{
   hr{
     display: none;
   }
+  nav{  
+    padding: 0 5% 0 5%;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 840px){
   nav{
     padding: 0 20% 0 20%;
-    justify-content: space-between;
   }
 }
