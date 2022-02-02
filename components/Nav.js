@@ -16,7 +16,7 @@ export default function Nav(){
         <div className={styles.nav}>
           <nav>
             <div className={styles.hidelogo}>
-              <p>LORNA WANJIRU</p> 
+              <p>MY PORTFOLIO</p> 
             </div>        
             <div className={styles.menu}>
            

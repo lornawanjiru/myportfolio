@@ -1,15 +1,15 @@
 import styles from '../styles/Home.module.css';
-import { useState, useEffect } from "react";
 
 
-const sample_content = ``;
+
+
 
 function Typewriter(){
   return(
-    <div className={styles.typewriter}>
-        <h3> Am a :-</h3>
-        <p> React Developer, Javascript Developer, Frontend Developer and Technical content creator. </p>  
-      </div>
+    <div className={styles.typewriter}>    
+      <p className={styles.line__1}>I am a Frontend Developer and a Technical content   </p>
+      <p className={styles.line__2}>creator based in Nairobi, Kenya</p>
+    </div>
  )
 }
 export default Typewriter;
