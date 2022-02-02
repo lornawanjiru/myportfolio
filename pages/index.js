@@ -16,8 +16,8 @@ export default function Home() {
         </div>
         <div className={styles.biosection}>
           <div className={styles.fadeintext}>
-            <h1>Hello I'm Lorna Wanjiru</h1>
-            <p>I'm a Freelancer Frontend developer and technical content creator.</p>
+            <h1>Hello I am Lorna Wanjiru</h1>
+            <p>I am a Freelancer Frontend developer and technical content creator.</p>
           </div>
           <div className={styles.buttons}>
             <button className={styles.bigbutton}> Download Cv </button>
