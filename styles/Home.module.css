@@ -38,9 +38,10 @@
   left: -200px;
   margin-right: 10%;
   flex-direction: column;
-  background-color: purple;
+  background-color: #ffc619;
   z-index: 1000;
-  color: #eee;
+  color: #272727;
+  font-weight: 700;
   font-size: 1.3em;
   margin-top: 15%; 
   overflow-x: hidden;
@@ -75,6 +76,8 @@
 .image{
   width: 80%;
 }
+
+
 .buttons{
   padding: 6%;
 }
@@ -216,6 +219,7 @@ button.bigbutton:active::before {
     background-color: inherit;
     flex-direction: row;
     margin-top: 5.9%;
+    color: #eee;
     
   }
   .navmenu.inactive{
@@ -250,5 +254,33 @@ button.bigbutton:active::before {
 @media only screen and (min-width: 840px){
   .biosection{
     margin-top: 6%;
+  }
+  
+}
+@media only screen and (min-width: 1200px){
+  .slide {
+    width: 100vw;
+    height: 100vh;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+  .one {
+    background-size: auto 100vh;
+  }
+  .outerwrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 }

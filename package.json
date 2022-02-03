@@ -11,6 +11,7 @@
     "@fontsource/aileron": "^4.5.0",
     "@fontsource/barrio": "^4.5.1",
     "@fontsource/fondamento": "^4.5.1",
+    "framer-motion": "^6.2.3",
     "hamburger-react": "^2.4.1",
     "next": "12.0.8",
     "react": "17.0.2",

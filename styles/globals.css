@@ -3,13 +3,16 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Aileron";
-  background-image: linear-gradient(90deg,#0b0127, rgb(65, 2, 65));
+  background-color: #272727;
  
 }
 hr{
  width: 70%;
- color: #eee;
- border-width: .5px;
+ color: #272727;
+ border-width: 1px;
+}
+::-webkit-scrollbar {
+  display:none;
 }
 a {
   color: inherit;
@@ -31,11 +34,11 @@ nav{
 }
 :root {
  
-  --colorShadeA: rgb(128, 0, 146);
-  --colorShadeB: rgb(128, 23, 166);
-  --colorShadeC: rgb(128, 40, 195);
-  --colorShadeD: rgb(128, 50, 211);
-  --colorShadeE: rgb(128, 65, 232);
+  --colorShadeA: #FFFF00;
+  --colorShadeB: #f8f805;
+  --colorShadeC: #FFFF66;
+  --colorShadeD: #FFFF99;
+  --colorShadeE: #FFFFcc;
 }
 button {
   position: relative;
@@ -46,7 +49,7 @@ button {
   vertical-align: middle;
   text-decoration: none;
   font-size: .9rem;
-  color: #eee;
+  color: #272727;
   font-weight: 700;
   text-transform: uppercase;
   font-family: inherit;

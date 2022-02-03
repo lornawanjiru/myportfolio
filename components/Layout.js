@@ -8,7 +8,7 @@ export default function Layout({children}){
     <div className={styles.center}> 
      <Nav /> 
     {children}
-    <Footer />
+    {/* <Footer /> */}
     </div>
  )
      
