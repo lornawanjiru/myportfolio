@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Landing from '../components/Landing'
-
+import Website from '../components/Websites'
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <div className={styles.outerwrapper}>
           <div className={styles.wrapper}>
             <div className={styles.slide+' '+styles.one}><Landing /></div>
-            <div className={styles.slide+' '+styles.two}></div>
+            <div className={styles.slide+' '+styles.two}><Website/></div>
             <div className={styles.slide+' '+styles.three}></div>
             <div className={styles.slide+' '+styles.four}></div>
           </div>

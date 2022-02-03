@@ -76,6 +76,7 @@
 .image{
     margin-top: -10%;
     float: right;   
+    z-index: -1;
 }
 .biosection{
   text-align: left;
@@ -92,6 +93,14 @@
   right: 0;
   bottom: 0;
   display: none;
+}
+.mobiledivision hr{
+  width: 100%;
+  border-width: 2%;
+  color: #fff;
+}
+.resize{
+  width: 100%;
 }
 @media only screen and (min-width: 640px){
  
@@ -156,6 +165,7 @@
   
 }
 @media only screen and (min-width: 1200px){
+  
   .slide {
     width: 100vw;
     height: 100vh;

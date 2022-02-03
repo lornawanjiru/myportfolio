@@ -101,4 +101,10 @@ button {
     position: relative;
   
   }
+  h1{
+    font-size: 5.5em;
+  }
+  h2{
+    font-size: 3.0em;
+  }
 }
