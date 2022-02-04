@@ -67,7 +67,7 @@ const handleReplay = () => {
           <div className={styles.direction}>
             <p>Scroll to begin your journey</p>
           </div>
-          
+      
       </div>  
     </>
  )

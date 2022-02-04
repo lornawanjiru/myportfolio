@@ -6,9 +6,7 @@ import PostList from './bloglist';
 function Website(){
  return(
     <div className={styles.website}>
-        <div className={styles.mobiledivision}>
-           <hr></hr>
-        </div>
+       
         <div className={styles.webcontainer}>
             <PostList posts={post} />
         </div>  
