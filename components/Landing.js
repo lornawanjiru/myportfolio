@@ -23,7 +23,7 @@ const placeholderText = [
   { type: "heading1", text: "Hello Guest" },
   {
     type: "heading2",
-    text: "Thanks for visiting my tiny world of experience ."
+    text: "Thanks for visiting my tiny world."
   },
   
 ];
@@ -62,7 +62,7 @@ const handleReplay = () => {
           </motion.div>
         </div>
           <div className={styles.image}>
-            <motion.img variants={imageVariants} src={`/About.jpg`} height={400} />
+            <motion.img variants={imageVariants} src={`/about1.png`} height={400} />
           </div>
           <div className={styles.direction}>
             <p>Scroll to begin your journey</p>

@@ -73,11 +73,9 @@
   padding: 4%;
   overflow: hidden;
 }
-.image{
-    margin-top: -10%;
-    float: right;   
-    z-index: -1;
-}
+/* .image{
+    
+} */
 .biosection{
   text-align: left;
 }

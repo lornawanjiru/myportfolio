@@ -3,7 +3,6 @@ import Link from 'next/link';
 import posts from '../../data/blogs.json';
 import { motion } from 'framer-motion';
 import PostInfo from '../../components/bloginfo';
-import styles from '../../styles/Home.module.css'
 
 let easing = [0.175, 0.85, 0.42, 0.96];
 
@@ -56,9 +55,8 @@ const Post = ({ post }) => {
   return (
     <div className="container post">
       <motion.div initial="exit" animate="enter" exit="exit">
-        <div>
-        <motion.img  className={styles.resize} variants={imageVariants}  src={`/images/${post.id}.jpg`} />
-        </div>
+        <motion.img variants={imageVariants} src={`/static/images/${post.id}.jpg`} />
+
         <motion.div variants={textVariants}>
           <PostInfo post={post} />
           <p>{post.text}</p>
@@ -75,12 +73,8 @@ const Post = ({ post }) => {
         .post {
           margin: 20px;
         }
-        
         .post p {
           margin: 40px 0;
-        }
-        motion img{
-          width: 100%;
         }
       `}</style>
     </div>

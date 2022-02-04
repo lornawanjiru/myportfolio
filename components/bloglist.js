@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import PostInfo from './web-info';
+import PostInfo from './bloginfo';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },

@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
-import post from '../data/website.json';
-import PostList from '../components/web-list';
+import post from '../data/blogs.json';
+import PostList from './bloglist';
 
 
 function Website(){
