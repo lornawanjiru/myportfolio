@@ -28,7 +28,7 @@ const PostList = ({ posts }) => (
               <Link scroll={false} href="/posts/[post]" as={`/posts/${post.id}`}>
                 <a>
                   <motion.div whileHover="hover" variants={{ hover: { scale: 0.96 } }}>
-                    <img src={`/images/${post.id}.jpg`} width={500}/>
+                    <img src={`/images/${post.id}.jpg`} width={200}/>
                   </motion.div>
                   <div>{post.title}</div>
                 </a>
@@ -51,7 +51,7 @@ const PostList = ({ posts }) => (
           padding: 20px;
         }
         img{
-            width:100%;
+            width:70%;
         }
         @media (max-width: 700px) {
           .post {

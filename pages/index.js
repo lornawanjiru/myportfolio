@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import Landing from '../components/Landing'
 import Blogs from '../components/blog'
 import Aboutme from '../components/Aboutme'
-
+import Website from '../components/website'
 
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
           <div className={styles.wrapper}>
             <div className={styles.slide+' '+styles.one}><Landing /></div>
             <div className={styles.slide+' '+styles.two}><Aboutme/></div>
-            <div className={styles.slide+' '+styles.three}></div>
+            <div className={styles.slide+' '+styles.three}><Website/></div>
             <div className={styles.slide+' '+styles.four}><Blogs/></div>
           </div>
       </div>

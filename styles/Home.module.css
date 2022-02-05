@@ -83,7 +83,7 @@
 .wordwrapper {
   white-space: nowrap;
 }
-.aboutme{
+.bluesection{
   background-color: rgb(1, 1, 46);
   padding: 10%;
   width: 100%;
@@ -120,6 +120,43 @@
 }
 .resize{
   width: 100%;
+}
+/* website section */
+.website{
+  padding: 10% 0 0 0;
+}
+.imge{
+  padding: 2%;
+}
+.webimage{
+  width: 100%;
+}
+.websiteimg{
+  margin-bottom: 5%;
+}
+.center{
+    text-align: center;
+}
+.description{
+  margin-left: 10%;
+  text-align: center;
+  font-size: 1.2em;
+  width: 80%;
+  border: 3px dashed rgb(1, 1, 46) ;
+}
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.blue:hover {
+	color: rgb(1, 1, 46);
+	text-shadow: 0px 0px 10px rgb(1, 1, 46);
 }
 @media only screen and (min-width: 640px){
  
@@ -176,15 +213,20 @@
     border-radius: 0;
     box-shadow: none;
   }
+  .imge{
+    height: 70px;
+  }
 }
 @media only screen and (min-width: 840px){
   .biosection{
     margin-top: 6%;
   }
-  
+  .imge{
+    height: 100px;
+  }
 }
 @media only screen and (min-width: 1200px){
-  
+  /* layout */
   .slide {
     width: 100vw;
     height: 100vh;
@@ -207,4 +249,49 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
   } 
+  /* landing page */
+  .biosection{
+    float: left;
+    width: 50%;
+  }
+  .image{
+    float: right;
+    width: 50%;
+  }
+  /* About me page */
+  .bluesection{
+    background-color: #272727;
+    padding: 0;
+    width: 50%;
+  }
+
+  /* Website section */
+  .website{
+    padding: 0;
+  }
+  .webimage{
+    width: 50%;
+  
+  }
+  .left{
+    float: left;
+    width: 50%;
+  }
+  .right{
+    float: right;
+    width: 50%;
+  }
+  .dis{
+    display: none;
+  }
+  .description{
+    margin-left: 10%;
+  }
+  /* blogs images */
+  .resize{
+    width: 40%;
+  }
+  .websiteimg{
+    margin-bottom: 0;
+  }
 }

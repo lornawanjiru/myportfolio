@@ -30,7 +30,7 @@ const variants = {
   return (
     <>
        
-      <div className={styles.aboutme}>
+      <div className={styles.bluesection}>
       <motion.div 
             ref={ref}
             variants={variants}
