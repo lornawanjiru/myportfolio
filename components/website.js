@@ -1,8 +1,8 @@
 import styles from '../styles/Home.module.css'
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer"; 
 import Button from './buttons';
+
 
 
 export default function Website() {
@@ -21,26 +21,30 @@ transition: {
 }
 };  
 
+
+
   return (
+   
     <div className={styles.website}> 
      <div className={styles.websiteimg}>
-         {/* <div><h4>My Work </h4></div> */}
+         <div className={styles.deskhide}><h1>My Work </h1></div>
      <div className={styles.flex}>
+       <div className={styles.uptop}>
        <div className={styles.left}>
        <motion.img className={styles.webimage} variants={imageVariants} src={`/images/navigation.png`} />
        <div className={styles.description}>
-           <p> This Website helped me master my way through navigation menus. 
-               I had a problem mainly when when it came to hamburger and with this project 
-               I had a really good improvement. </p>
+           <p> Next.js and Css </p>
                <Button />
        </div>
        </div>
+       </div>
+       <div className={styles.uptop}>
        <div className={styles.right}>
        <motion.img className={styles.webimage} variants={imageVariants} src={`/images/photography.png`} />
-       <div className={styles.description}>
-           <p> This is a photography portfolio developed by me.I was tring out Next.js. 
-               I realised Next.js was the framework for me.  </p>
+       <div className={styles.description+' '+styles}>
+           <p>Next.js and Css </p>
                <Button />
+       </div>
        </div>
        </div>
        </div>
@@ -57,6 +61,6 @@ transition: {
      </div> 
      </div>
     </div>
-
+    
 
 )}

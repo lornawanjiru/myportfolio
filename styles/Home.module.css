@@ -125,11 +125,16 @@
 .website{
   padding: 10% 0 0 0;
 }
+.deskhide{
+  text-align: left;
+  padding: 2%;
+}
 .imge{
   padding: 2%;
 }
 .webimage{
   width: 100%;
+  padding: 2%;
 }
 .websiteimg{
   margin-bottom: 5%;
@@ -138,11 +143,11 @@
     text-align: center;
 }
 .description{
-  margin-left: 10%;
+  
   text-align: center;
   font-size: 1.2em;
   width: 80%;
-  border: 3px dashed rgb(1, 1, 46) ;
+  
 }
 .noselect {
   -webkit-touch-callout: none;
@@ -153,7 +158,10 @@
             user-select: none;
 		-webkit-tap-highlight-color: transparent;
 }
-
+.buttons{
+  display: flex;
+  margin-left: 20%;
+}
 .blue:hover {
 	color: rgb(1, 1, 46);
 	text-shadow: 0px 0px 10px rgb(1, 1, 46);
@@ -227,6 +235,9 @@
 }
 @media only screen and (min-width: 1200px){
   /* layout */
+  .deskhide{
+    display: none;
+  }
   .slide {
     width: 100vw;
     height: 100vh;
