@@ -44,7 +44,7 @@ const PostList = ({ posts }) => (
     <div className="posts">
       {posts.map(post => {
         return (
-          <FadeInSection>
+          
           <div key={post.id} className="post">
             <motion.div variants={postVariants}>
               <Link scroll={false} href="/posts/[post]" as={`/posts/${post.id}`}>
@@ -58,7 +58,7 @@ const PostList = ({ posts }) => (
               <PostInfo post={post} />
             </motion.div>
           </div>
-          </FadeInSection>
+         
         );
       })}
 
