@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import PostInfo from './bloginfo';
+import React from 'react';
+import styles from '../styles/Home.module.css'
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -12,6 +14,25 @@ const postVariants = {
     transition: { duration: 0.2, ease: [0.48, 0.15, 0.25, 0.96] }
   }
 };
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={isVisible === false ?
+        styles.isvisible +' '+ styles.fadeinsection : ''}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
 
 const PostList = ({ posts }) => (
   <motion.div
@@ -23,12 +44,13 @@ const PostList = ({ posts }) => (
     <div className="posts">
       {posts.map(post => {
         return (
+          <FadeInSection>
           <div key={post.id} className="post">
             <motion.div variants={postVariants}>
               <Link scroll={false} href="/posts/[post]" as={`/posts/${post.id}`}>
                 <a>
                   <motion.div whileHover="hover" variants={{ hover: { scale: 0.96 } }}>
-                    <img src={`/images/${post.id}.jpg`} width={200}/>
+                    <img src={`/images/${post.id}.jpg`}/>
                   </motion.div>
                   <div>{post.title}</div>
                 </a>
@@ -36,6 +58,7 @@ const PostList = ({ posts }) => (
               <PostInfo post={post} />
             </motion.div>
           </div>
+          </FadeInSection>
         );
       })}
 
@@ -46,12 +69,12 @@ const PostList = ({ posts }) => (
           justify-content: space-between;
         }
         .post {
-          width: 50%;
+          width: 100%;
           min-width: 340px;
           padding: 20px;
         }
         img{
-            width:70%;
+            width:100%;
         }
         @media (max-width: 700px) {
           .post {

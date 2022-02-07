@@ -35,7 +35,8 @@ const variants = {
             ref={ref}
             variants={variants}
             animate={isVisible ? "visible" : "hidden"}
-            transition={{duration : 0.3, ease: "easeOut" }} className={styles.aboutmetext}>
+            transition={{duration : 0.3, ease: "easeOut" }} 
+            className={styles.aboutmetext}>
         <div className={styles.title}>
         <h1>In A Nutshell</h1>
         </div>

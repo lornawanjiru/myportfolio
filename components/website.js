@@ -1,9 +1,28 @@
 import styles from '../styles/Home.module.css'
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
-import Button from './buttons';
+import React from 'react';
 
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={isVisible === false ?
+        styles.isvisible +' '+ styles.fadeinsection : ''}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
 
 export default function Website() {
 
@@ -24,29 +43,40 @@ transition: {
 
 
   return (
-   
+    
     <div className={styles.website}> 
+    
      <div className={styles.websiteimg}>
-         <div className={styles.deskhide}><h1>My Work </h1></div>
+       <FadeInSection> 
+          <div className={styles.deskhide}><h1>My Work </h1></div> 
+      </FadeInSection>
      <div className={styles.flex}>
-       <div className={styles.uptop}>
-       <div className={styles.left}>
-       <motion.img className={styles.webimage} variants={imageVariants} src={`/images/navigation.png`} />
-       <div className={styles.description}>
-           <p> Next.js and Css </p>
-               <Button />
-       </div>
-       </div>
-       </div>
-       <div className={styles.uptop}>
-       <div className={styles.right}>
-       <motion.img className={styles.webimage} variants={imageVariants} src={`/images/photography.png`} />
-       <div className={styles.description+' '+styles}>
-           <p>Next.js and Css </p>
-               <Button />
-       </div>
-       </div>
-       </div>
+       <FadeInSection>
+          <div className={styles.left}>
+          <motion.img className={styles.webimage} variants={imageVariants} src={`/images/navigation.png`} />
+          <div className={styles.description}>
+             <div className={styles.buttoncenter}>
+             <div className={styles.buttons}>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/Navigation'>View Code</a></button>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://navigation-nine.vercel.app/'>Demo live</a></button>
+            </div>
+             </div>
+          </div>
+          </div>
+       </FadeInSection>
+       <FadeInSection>
+          <div className={styles.right}>
+          <motion.img className={styles.webimage} variants={imageVariants} src={`/images/photography.png`} />
+          <div className={styles.description+' '+styles}>
+            <div className={styles.buttoncenter}>
+            <div className={styles.buttons}>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/photography'>View Code</a></button>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://photography-ten.vercel.app/'>Demo live</a></button>
+            </div>
+             </div>
+          </div>
+          </div>
+       </FadeInSection>
        </div>
      </div>
      <div className={styles.dis}>
@@ -61,6 +91,5 @@ transition: {
      </div> 
      </div>
     </div>
-    
-
+   
 )}

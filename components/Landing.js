@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import AnimatedText from "./Animatedtext";
 
+
+
+
+
 function Firstcontent(){
 let easing = [0.175, 0.85, 0.42, 0.96];
 
@@ -42,9 +46,8 @@ const handleReplay = () => {
 };
   return(
     <>    
-      <div className={styles.landingpage}>
+      <div className={styles.landingpage} >
        
-
         <div className={styles.biosection}>
           <motion.div
               className={styles.App}
@@ -61,7 +64,7 @@ const handleReplay = () => {
               
           </motion.div>
         </div>
-          <div className={styles.image}>
+          <div className={styles.image+' '+styles.deskhide}>
             <motion.img variants={imageVariants} src={`/about1.png`} height={400} />
           </div>
           <div className={styles.direction}>

@@ -66,7 +66,7 @@ const Post = ({ post }) => {
 
         <motion.div variants={backVariants}>
           <Link href="/">
-            <a>Back to list</a>
+            <button>Back Home</button>
           </Link>
         </motion.div>
       </motion.div>
@@ -78,6 +78,7 @@ const Post = ({ post }) => {
         
         .post p {
           margin: 40px 0;
+          color: #eee;
         }
         motion img{
           width: 100%;

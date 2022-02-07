@@ -23,7 +23,7 @@
 }
 .icon{
   cursor: pointer;
-  padding: 4%;
+  padding: 2%;
 }
 .navlink{
   line-height: 2.5;
@@ -135,6 +135,7 @@
 .webimage{
   width: 100%;
   padding: 2%;
+  padding-bottom: 5%;
 }
 .websiteimg{
   margin-bottom: 5%;
@@ -149,6 +150,27 @@
   width: 80%;
   
 }
+.buttoncenter{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.fadeinsection {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fadeinsection .isvisible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 .noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -160,11 +182,16 @@
 }
 .buttons{
   display: flex;
-  margin-left: 20%;
+}
+.right{
+  padding-top: 17%;
 }
 .blue:hover {
 	color: rgb(1, 1, 46);
 	text-shadow: 0px 0px 10px rgb(1, 1, 46);
+}
+.dis{
+  padding-top: 17%;
 }
 @media only screen and (min-width: 640px){
  
@@ -209,7 +236,6 @@
   }
   .icon{
     line-height: 2.5em;
-    margin-top: 10%;
     
   }
   .social{
@@ -226,11 +252,17 @@
   }
 }
 @media only screen and (min-width: 840px){
-  .biosection{
-    margin-top: 6%;
-  }
+  
   .imge{
     height: 100px;
+  }
+  .biosection{
+    float: left;
+    width: 60%;
+  }
+  .image{
+    float: right;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1200px){
@@ -262,12 +294,8 @@
   } 
   /* landing page */
   .biosection{
-    float: left;
-    width: 50%;
-  }
-  .image{
-    float: right;
-    width: 50%;
+    text-align: center;
+    width: 100%;
   }
   /* About me page */
   .bluesection{
@@ -291,6 +319,7 @@
   .right{
     float: right;
     width: 50%;
+    padding-top: 0;
   }
   .dis{
     display: none;

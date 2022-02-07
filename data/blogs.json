@@ -1,15 +1,17 @@
 [
     {
+      "title": "Sliding Window Technique",
       "text": "Nec vero pietas adversus deos nec quanta iis gratia debeatur sine explicatione naturae intellegi potest. Aliter enim explicari, quod quaeritur, non potest. Quaero igitur, quo modo hae tantae commendationes a natura profectae subito a sapientia relictae sint. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; Scio enim esse quosdam, qui quavis lingua philosophari possint; Nunc haec primum fortasse audientis servire debemus. Quarum cum una sit, qua mores conformari putantur, differo eam partem, quae quasi stirps ets huius quaestionis.",
       "id": 6,
-      "author": { "name": "Rose Kelley", "age": 22, "avatar": "1.jpg" },
-      "date": "Sep 16, 2019"
+      "status":  "Published" ,
+      "date": "Feb 16, 2022"
     },
     {
-      "text": "Se dicere inter honestum et turpe nimium quantum, nescio quid inmensum, inter ceteras res nihil omnino interesse. Nec vero alia sunt quaerenda contra Carneadeam illam sententiam. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur. Non modo carum sibi quemque, verum etiam vehementer carum esse? Tamen aberramus a proposito, et, ne longius, prorsus, inquam, Piso, si ista mala sunt, placet.",
+      "title": "Binary Search Tree",
+      "text": "Nec vero pietas adversus deos nec quanta iis gratia debeatur sine explicatione naturae intellegi potest. Aliter enim explicari, quod quaeritur, non potest. Quaero igitur, quo modo hae tantae commendationes a natura profectae subito a sapientia relictae sint. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; Scio enim esse quosdam, qui quavis lingua philosophari possint; Nunc haec primum fortasse audientis servire debemus. Quarum cum una sit, qua mores conformari putantur, differo eam partem, quae quasi stirps ets huius quaestionis.",
       "id": 5,
-      "author": { "name": "Helen Snyder", "age": 25, "avatar": "4.jpg" },
-      "date": "Sep 08, 2019"
+      "status":  "Incomplete" ,
+      "date": "Feb 16, 2022"
     }
     
   ]
