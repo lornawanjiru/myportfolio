@@ -1,8 +1,9 @@
 import styles from '../styles/Home.module.css'
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
-import React from 'react';
-
+import React, {useEffect} from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(false);
@@ -40,7 +41,9 @@ transition: {
 }
 };  
 
-
+useEffect(()=>{
+  Aos.init({duration: 2000});
+},[]);
 
   return (
     
@@ -51,8 +54,8 @@ transition: {
           <div className={styles.deskhide}><h1>My Work </h1></div> 
       </FadeInSection>
      <div className={styles.flex}>
-       <FadeInSection>
-          <div className={styles.left}>
+
+          <div data-aos="fade-left" className={styles.left}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/images/navigation.png`} />
           <div className={styles.description}>
              <div className={styles.buttoncenter}>
@@ -63,9 +66,9 @@ transition: {
              </div>
           </div>
           </div>
-       </FadeInSection>
-       <FadeInSection>
-          <div className={styles.right}>
+       
+       
+          <div data-aos="fade-right"  className={styles.right}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/images/photography.png`} />
           <div className={styles.description+' '+styles}>
             <div className={styles.buttoncenter}>
@@ -76,7 +79,7 @@ transition: {
              </div>
           </div>
           </div>
-       </FadeInSection>
+       
        </div>
      </div>
      <div className={styles.dis}>
