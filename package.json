@@ -14,7 +14,8 @@
     "aos": "^3.0.0-beta.6",
     "framer-motion": "^6.2.4",
     "hamburger-react": "^2.4.1",
-    "next": "12.0.8",
+    "lil-gui": "^0.16.1",
+    "next": "^12.0.10",
     "particles.js": "^2.0.0",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.6",
@@ -27,7 +28,8 @@
     "react-smooth-list": "^1.0.2",
     "react-tsparticles": "^1.40.2",
     "react-typewriter": "^0.4.1",
-    "react-typewriter-effect": "^1.1.0"
+    "react-typewriter-effect": "^1.1.0",
+    "three": "^0.137.5"
   },
   "devDependencies": {
     "eslint": "8.7.0",

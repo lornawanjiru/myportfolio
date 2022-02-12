@@ -14,6 +14,10 @@
   font-weight: 900;
   margin-top: 0;
 }
+.landingImage{
+  display: none;
+}
+
 /* .nav{
   padding: 3%;
 } */
@@ -281,6 +285,25 @@
     background-color: #eee;
     box-shadow: none;
   }
+
+  /* Landing page */
+.one{
+   position: relative;
+   width: 100vh;
+   height: 100vh;
+  }
+.landingImage{
+    width: 100px;
+    height: 100px;
+}
+.biosection{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
   /* layout */
   .deskhide{
     display: none;
@@ -307,11 +330,8 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
   } 
-  /* landing page */
-  .biosection{
-    text-align: center;
-    width: 100%;
-  }
+
+  
   /* About me page */
   .bluesection{
     background-color: #272727;
