@@ -2,19 +2,23 @@ import * as THREE from "three";
 import fragment from "./shader/fragment.glsl";
 import vertex from "./shader/vertex.glsl";
 import GUI from "lil-gui";
+import React from "react";
+
 
 function clamp(number, min, max) {
   return Math.max(min, Math.min(number, max));
 }
 
-export default class Sketch {
+export default class Sketch extends React.Component{
+ 
   constructor(options) {
-    this.scene = new THREE.Scene();
-
-    this.container = options.dom;
-    this.img = this.container.querySelector('img')
-    this.width = this.container.offsetWidth;
-    this.height = this.container.offsetHeight;
+    super(options)
+    let str = this;
+    str.scene = new THREE.Scene();
+    this.containers = options.dom;
+    this.img = this.containers.querySelector('Image')
+    this.width = this.containers.offsetWidth;
+    this.height = this.containers.offsetHeight;
     this.renderer = new THREE.WebGLRenderer();
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     this.renderer.setSize(this.width, this.height);
@@ -22,7 +26,7 @@ export default class Sketch {
     this.renderer.physicallyCorrectLights = true;
     this.renderer.outputEncoding = THREE.sRGBEncoding;
 
-    this.container.appendChild(this.renderer.domElement);
+    this.containers.appendChild(this.renderer.domElement);
 
     this.camera = new THREE.PerspectiveCamera(
       70,
@@ -59,7 +63,7 @@ export default class Sketch {
   }
 
   getValue(val){
-    return parseFloat(this.container.getAttribute('data-'+val))
+    return parseFloat(this.container.getAttribute("data-"+val))
   }
 
 
@@ -175,7 +179,7 @@ export default class Sketch {
   }
 
   addObjects() {
-
+    let str = this;
     this.regenerateGrid()
     let texture = new THREE.Texture(this.img)
     texture.needsUpdate = true;
@@ -205,7 +209,7 @@ export default class Sketch {
     this.geometry = new THREE.PlaneGeometry(1, 1, 1, 1);
 
     this.plane = new THREE.Mesh(this.geometry, this.material);
-    this.scene.add(this.plane);
+    str.scene.add(str.plane);
   }
 
 
@@ -258,6 +262,7 @@ export default class Sketch {
     this.renderer.render(this.scene, this.camera);
   }
 }
+
 
 new Sketch({
   dom: document.getElementById("canvasContainer")

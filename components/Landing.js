@@ -3,6 +3,14 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import AnimatedText from "./Animatedtext";
 import Image from 'next/image';
+import dynamic from "next/dynamic";
+
+const Distortion = dynamic(
+  () => {
+    return import("../components/distortion/app");
+  },
+  { ssr: false }
+);
 
 
 function Firstcontent(){
@@ -43,15 +51,18 @@ const handleReplay = () => {
   }, 600);
 };
   return(
-    <>    
+    <> 
+       <Distortion />
       <div className={styles.landingpage} >
       <div id="canvasContainer"
 				data-grid="50"
 				data-mouse="0.25"
 				data-strength="0.11"
 			>
+        <div className={styles.showdesk}>
 				<Image className={styles.landingImage}  src="/back.jpg" alt="" layout='fill' objectFit='cover' objectPosition='center'/>
-			</div>
+		    </div>
+    	</div>
         <div className={styles.biosection}>
           <motion.div
               className={styles.App}

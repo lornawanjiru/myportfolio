@@ -14,6 +14,9 @@
   font-weight: 900;
   margin-top: 0;
 }
+.showdesk{
+  display: none;
+}
 .landingImage{
   display: none;
 }
@@ -270,6 +273,9 @@
   }
 }
 @media only screen and (min-width: 1200px){
+  .showdesk{
+    display: inline;
+  }
   /* Navigation */
   .hidelogo{
     font-size: .9em;
