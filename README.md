@@ -37,7 +37,7 @@ I am a newbie open source contributor but soon hoping to have deleted this cause
 
 Apart from coding and being funny (or else i hope i am) I have written technical articles which i also maintain.
 
-  *[sliding Window Technique](https://lornamuchangi.medium.com/sliding-window-technique-c9191be113b5)
+  * [sliding Window Technique](https://lornamuchangi.medium.com/sliding-window-technique-c9191be113b5)
 ---
 📈Github Stats
 
