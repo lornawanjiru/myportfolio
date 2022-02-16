@@ -1,6 +1,8 @@
 import styles from '../styles/Home.module.css'
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; 
+import Marquee from "react-fast-marquee";
+
 
 export default function About() {
 let easing = [0.175, 0.85, 0.42, 0.96];
@@ -31,6 +33,7 @@ const variants = {
     <>
        
       <div className={styles.bluesection}>
+        <div className={styles.deskhide}>
       <motion.div 
             ref={ref}
             variants={variants}
@@ -48,7 +51,25 @@ const variants = {
             <p> I am passionate about technology and i love seeing things looking amazing.
                 I am based in Nairobi, Kenya. </p> 
         </motion.div>
-        
+        </div>
+        <div className={styles.showdesk}>
+          <div className={styles.spac}>
+          <Marquee direction='right' gradientWidth={0}>
+          <motion.img className={styles.imge} variants={imageVariants} src={`/html.png`} height={40}/>
+          <motion.img className={styles.imge} variants={imageVariants} src={`/css.png`} height={40} />
+          <motion.img className={styles.imge} variants={imageVariants} src={`/js.png`} height={40} />
+          <motion.img className={styles.imge} variants={imageVariants} src={`/nextjs.png`} height={40} />
+          <motion.img className={styles.imge} variants={imageVariants} src={`/react.png`} height={40} />
+        </Marquee>
+        </div>
+        <Marquee direction='left' gradientWidth={0}>
+          <motion.img className={styles.imge} variants={imageVariants} src={`/html.png`} height={40}/>
+          <motion.img className={styles.imge} variants={imageVariants} src={`/css.png`} height={40} />
+          <motion.img className={styles.imge} variants={imageVariants} src={`/js.png`} height={60} />
+          <motion.img className={styles.imge} variants={imageVariants} src={`/nextjs.png`} height={60} />
+          <motion.img className={styles.imge} variants={imageVariants} src={`/react.png`} height={60} />
+        </Marquee>
+        </div>
       </div>  
       
     

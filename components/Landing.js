@@ -3,14 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import AnimatedText from "./Animatedtext";
 import Image from 'next/image';
-import dynamic from "next/dynamic";
 
-const Distortion = dynamic(
-  () => {
-    return import("../components/distortion/app");
-  },
-  { ssr: false }
-);
 
 
 function Firstcontent(){
@@ -27,7 +20,7 @@ const imageVariants = {
     }
   }
 };
-const [replay, setReplay] = useState(true);
+const [replay] = useState(true);
 // Placeholder text data, as if from API
 const placeholderText = [
   { type: "heading1", text: "Hello Guest" },
@@ -44,25 +37,21 @@ const container = {
     }
   }
 };
-const handleReplay = () => {
-  setReplay(!replay);
-  setTimeout(() => {
-    setReplay(true);
-  }, 600);
-};
+// const handleReplay = () => {
+//   setReplay(!replay);
+//   setTimeout(() => {
+//     setReplay(true);
+//   }, 600);
+// };
+
   return(
     <> 
-       <Distortion />
+      
       <div className={styles.landingpage} >
-      <div id="canvasContainer"
-				data-grid="50"
-				data-mouse="0.25"
-				data-strength="0.11"
-			>
-        <div className={styles.showdesk}>
-				<Image className={styles.landingImage}  src="/back.jpg" alt="" layout='fill' objectFit='cover' objectPosition='center'/>
-		    </div>
-    	</div>
+         
+        <div className={styles.showdesk }>      
+				<Image className={styles.landingImage}  src="/back.jpg" alt="" layout='fill' objectFit='cover' objectPosition='center'/> 
+        </div>
         <div className={styles.biosection}>
           <motion.div
               className={styles.App}
@@ -79,14 +68,12 @@ const handleReplay = () => {
               
           </motion.div>
         </div>
-          <div className={styles.image+' '+styles.deskhide}>
-            <motion.img variants={imageVariants} src={`/about1.png`} height={400} />
-          </div>
-          <div className={styles.direction}>
-            <p>Scroll to begin your journey</p>
-          </div>
-      
+        <div className={styles.image+' '+styles.deskhide}>
+          <motion.img variants={imageVariants} src={`/about1.png`} height={400} />
+        </div>
+          
       </div>  
+      
     </>
  )
 }
