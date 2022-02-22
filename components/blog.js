@@ -27,8 +27,9 @@ function FadeInSection(props) {
 function Website(){
  return(
     <div className={styles.website}>
+      
         <FadeInSection> 
-          <div className={styles.deskhide}><h1>My Blogs </h1></div> 
+          <div className={styles.blogtitle} ><h2>My Blogs </h2></div> 
         </FadeInSection>
         <div className={styles.webcontainer}> 
             <PostList posts={post} />   

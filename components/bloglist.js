@@ -66,10 +66,9 @@ const PostList = ({ posts }) => (
 
       <style jsx>{`
         .posts {
+          padding:5%;
           display: flex;
-          flex-flow:wrap;
-          flex-direction:row;
-          justify-content: space-around;
+          justify-content: space-between; 
         }
         .post {
           width: 100%;
@@ -79,15 +78,18 @@ const PostList = ({ posts }) => (
         img{
             width:100%;
         }
+        
         @media (max-width: 700px) {
           .post {
             width: auto;
           }
         }
         @media (max-width: 1200px) {
-           img{
-             width : 50%
-           }
+           .posts {
+            flex-flow:wrap;
+            flex-direction:row;
+            justify-content: space-around;
+          }
         }
       `}</style>
     </div>

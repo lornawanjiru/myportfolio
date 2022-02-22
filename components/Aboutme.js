@@ -80,7 +80,6 @@ const variants = {
         </Marquee>
        
       </div>
-   
      <div className={styles.aboutdec}>
      <div className={styles.aboutbox}>
         <div className={styles.title}>
@@ -94,8 +93,7 @@ const variants = {
             open source.
             I have a weird liking of React js and i have built most of my projects with react.       
           </p>
-          <br/>
-          <br/> 
+          
           <h2> My Language Status</h2>
           <div className={styles.progress}>   
           <div className={styles.spac} style={{ width: 110, height: 110 }}> 

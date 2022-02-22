@@ -132,10 +132,7 @@
 .website{
   padding: 10% 0 0 0;
 }
-.deskhide{
-  text-align: left;
-  padding: 2%;
-}
+
 .imge{
   padding: 2%;
 }
@@ -273,7 +270,10 @@
   }
 }
 @media only screen and (min-width: 1200px){
- 
+  .deskhide{
+    text-align: left;
+    padding: 2%;
+  }
  .landingpage{
    padding: 0;
    height: 100%;
@@ -347,7 +347,7 @@
   
   /* About me page */
   .aboutme{
-    height: 2000vh;
+   
   }
   .bluesection{
     background-color: rgb(1, 1, 46);
@@ -374,7 +374,7 @@
    float: left;
    text-align: left;
    width: 60%;
-   height: 78%;
+   height: 70%;
    margin-left: 15%;
    padding: 3%;
    position: relative;
@@ -388,7 +388,7 @@
   .image{
     position: fixed;
     margin-top: 0.5%;
-    height: 70%;
+    height: 60%;
   }
   .image img{
     border-radius: 8px;
@@ -398,6 +398,14 @@
     padding: 3%;
   }
   /* Website section */
+  .three{
+    background-color:  rgb(1, 1, 46);;
+  }
+  .websitetitle{
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 3%;
+  }
   .website{
     padding: 0;
     display: flex;
@@ -406,18 +414,19 @@
     width: 100%;
   }
   .flex{
-    margin-left: 10%;
+    padding: 0%;
+   
   }
   .buttoncenter1{
      margin-left: 20%;
   }
   .left{
     float: left;
-    width: 40%;
+    width: 46%;
   }
   .right{
     float: right;
-    width: 40%;
+    width: 46%;
     padding-top: 0;
   }
   .dis{
@@ -430,23 +439,29 @@
     background-color: rgb(1, 1, 46);
     width:110vh; 
     padding: 1%;   
-    height:155px;
+    height:1px;
     -webkit-transform-origin: left top;
-    -webkit-transform:rotate(-87deg) translateX(-100%);
+    -webkit-transform:rotate(-90deg) translateX(-100%);
   }
  .greysection p{
    font-size: 1.2em;
  }
   /* blogs images */
   .resize{
-    width: 20%;
+    width: 50%;
   }
   .websiteimg{
     margin-bottom: 0;
   }
   .blogimg{
-    width: 80%;
+    padding: 5%;
+    margin-top: 15%;
+  }
+  .blogtitle{
+    width: 200%;
+    
+  }
+  .blogtitle h2{
     margin-top: 30%;
   }
- 
 }
