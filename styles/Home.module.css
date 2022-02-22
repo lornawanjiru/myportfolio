@@ -346,6 +346,9 @@
 
   
   /* About me page */
+  .aboutme{
+    height: 2000vh;
+  }
   .bluesection{
     background-color: rgb(1, 1, 46);
     width:100vh; 
@@ -354,24 +357,67 @@
     -webkit-transform-origin: left top;
     -webkit-transform:rotate(-90deg) translateX(-100%);
   }
+ .bluesection p{
+   font-size: 1.5em;
+ }
  .imge{
    height: 70px;
  }
+ .aboutbox{
+   width: 80%;
+ }
+ .aboutdec{
+  border-radius: 8px;
+  background-color: #eee;
+   color: #272727;
+   margin-top: 0;
+   float: left;
+   text-align: left;
+   width: 60%;
+   height: 78%;
+   margin-left: 15%;
+   padding: 3%;
+   position: relative;
+ }
+ .aboutdec h1{
+   font-size: 3.0em;
+ }
+ .progress{
+   display: flex;
+ }
+  .image{
+    position: fixed;
+    margin-top: 0.5%;
+    height: 70%;
+  }
+  .image img{
+    border-radius: 8px;
+    height: 100%;
+  }
+  .spac{
+    padding: 3%;
+  }
   /* Website section */
   .website{
     padding: 0;
+    display: flex;
   }
   .webimage{
-    width: 50%;
-  
+    width: 100%;
+  }
+  .flex{
+    margin-left: 10%;
+  }
+  .buttoncenter1{
+     margin-left: 20%;
   }
   .left{
     float: left;
-    width: 50%;
+    width: 40%;
   }
   .right{
     float: right;
-    width: 50%;
+    width: 40%;
     padding-top: 0;
   }
   .dis{
@@ -380,11 +426,27 @@
   .description{
     margin-left: 10%;
   }
+  .greysection{
+    background-color: rgb(1, 1, 46);
+    width:110vh; 
+    padding: 1%;   
+    height:155px;
+    -webkit-transform-origin: left top;
+    -webkit-transform:rotate(-87deg) translateX(-100%);
+  }
+ .greysection p{
+   font-size: 1.2em;
+ }
   /* blogs images */
   .resize{
-    width: 40%;
+    width: 20%;
   }
   .websiteimg{
     margin-bottom: 0;
   }
+  .blogimg{
+    width: 80%;
+    margin-top: 30%;
+  }
+ 
 }

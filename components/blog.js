@@ -30,10 +30,8 @@ function Website(){
         <FadeInSection> 
           <div className={styles.deskhide}><h1>My Blogs </h1></div> 
         </FadeInSection>
-        <div className={styles.webcontainer}>
-            
-            <PostList posts={post} />
-            
+        <div className={styles.webcontainer}> 
+            <PostList posts={post} />   
         </div>  
       </div>
  )

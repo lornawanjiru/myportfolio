@@ -48,7 +48,7 @@ useEffect(()=>{
   return (
     
     <div className={styles.website}> 
-    
+     <div className={styles.deskhide} >
      <div className={styles.websiteimg}>
        <FadeInSection> 
           <div className={styles.deskhide}><h1>My Work </h1></div> 
@@ -93,6 +93,37 @@ useEffect(()=>{
      </Marquee>
      </div> 
      </div>
+     </div>
+     <div className={styles.showdesk}>
+     <div className={styles.greysection}>
+       <p># 👾 FRONTEND DEVELOPMENT 👾 #</p>   
+        <p> # 👾  A user interface is like a joke. If you have to explain it, it is not that good. 👾  # </p>   
     </div>
+    <div className={styles.flex}>
+    <div  className={styles.left}>
+     <motion.img className={styles.webimage} variants={imageVariants} src={`/images/navigation.png`} />
+          <div className={styles.description}>
+             <div className={styles.buttoncenter1}>
+             <div className={styles.buttons}>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/Navigation'>View Code</a></button>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://navigation-nine.vercel.app/'>Demo live</a></button>
+            </div>
+             </div>
+          </div>
+          </div>
+         </div>
+        <div  className={styles.right}>
+         <motion.img className={styles.webimage} variants={imageVariants} src={`/images/photography.png`} />
+          <div className={styles.description+' '+styles}>
+            <div className={styles.buttoncenter1}>
+            <div className={styles.buttons}>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/photography'>View Code</a></button>
+                <button className={styles.noselect+' '+ styles.blue}><a href='https://photography-ten.vercel.app/'>Demo live</a></button>
+            </div>
+             </div>
+          </div>
+         </div>
+      </div>
+      </div>
    
 )}

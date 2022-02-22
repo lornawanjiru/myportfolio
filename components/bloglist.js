@@ -45,9 +45,9 @@ const PostList = ({ posts }) => (
       {posts.map(post => {
         return (
           
-          <div key={post.id} className="post">
+          <div key={post.id} className={styles.posts}>
             <FadeInSection>
-            <motion.div variants={postVariants}>
+            <motion.div variants={postVariants} className={styles.blogimg} >
               <Link scroll={false} href="/posts/[post]" as={`/posts/${post.id}`}>
                 <a>
                   <motion.div whileHover="hover" variants={{ hover: { scale: 0.96 } }}>
@@ -67,8 +67,9 @@ const PostList = ({ posts }) => (
       <style jsx>{`
         .posts {
           display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
+          flex-flow:wrap;
+          flex-direction:row;
+          justify-content: space-around;
         }
         .post {
           width: 100%;
@@ -82,6 +83,11 @@ const PostList = ({ posts }) => (
           .post {
             width: auto;
           }
+        }
+        @media (max-width: 1200px) {
+           img{
+             width : 50%
+           }
         }
       `}</style>
     </div>
