@@ -111,7 +111,11 @@ useEffect(()=>{
                   </div>
                 </div>
           </div>
+
+         
+
           <div data-aos="flip-left" className={styles.right}>
+
               <motion.img className={styles.webimage} variants={imageVariants} src={`/photograpy.png`} />
                 <div className={styles.description+' '+styles}>
                   <div className={styles.buttoncenter1}>
