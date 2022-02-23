@@ -4,6 +4,7 @@ import Landing from '../components/Landing'
 import Blogs from '../components/blog'
 import Aboutme from '../components/Aboutme'
 import Website from '../components/website'
+import Contact from '../components/Contact'
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
             <div className={styles.slide+' '+styles.two}><Aboutme/></div>
             <div className={styles.slide+' '+styles.three}id='Portfolio'><Website/></div>
             <div className={styles.slide+' '+styles.four} id='Blogs'><Blogs/></div>
+            <div className={styles.slide+' '+styles.five} id='Contact'><Contact/></div>
           </div>
       </div>
      

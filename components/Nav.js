@@ -22,6 +22,7 @@ export default function Nav(){
            
             <ul className={isOpen === false ? 
                 styles.navmenu +' '+ styles.inactive : styles.navmenu +' '+ styles.active }>
+              
               <li>
                 <br></br>
                 <Link
@@ -59,6 +60,8 @@ export default function Nav(){
                             <hr></hr>
               </li>
               <br/>
+                 
+              
              
               <div className={styles.social}>
                <div className={styles.icon}><a href='https://www.linkedin.com/in/lornawanjirumuchangi/'><Image src= "/linkedin.svg" height={25} width={25}/></a></div>

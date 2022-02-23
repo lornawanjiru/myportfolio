@@ -109,6 +109,9 @@ button:focus {
     z-index: 7000;
     background-color: inherit;
   }
+  nav li {
+    display: none;
+  }
   ::-webkit-scrollbar {
     display:none;
   }
@@ -116,7 +119,7 @@ button:focus {
     position: relative;
   }
   h1{
-    font-size: 5.5em;
+    font-size: 2.5em;
   }
   h2{
     font-size: 3.0em;
