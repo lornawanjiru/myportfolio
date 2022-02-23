@@ -18,7 +18,7 @@ export default function Home() {
       <div className={styles.outerwrapper}>
           <div className={styles.wrapper}>
             <div className={styles.slide+' '+styles.one} id='Home'><Landing /></div>
-            <div className={styles.slide+' '+styles.two}><Aboutme/></div>
+            <div className={styles.slide+' '+styles.two} ><Aboutme/></div>
             <div className={styles.slide+' '+styles.three}id='Portfolio'><Website/></div>
             <div className={styles.slide+' '+styles.four} id='Blogs'><Blogs/></div>
           </div>

@@ -54,7 +54,7 @@ useEffect(()=>{
           <div className={styles.blogtitle}><h1>My Work </h1></div> 
       </FadeInSection>
      <div className={styles.flex}>
-          <div data-aos="fade-left" className={styles.left}>
+          <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className={styles.left}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/images/navigation.png`} />
           <div className={styles.description}>
              <div className={styles.buttoncenter}>
@@ -67,7 +67,7 @@ useEffect(()=>{
           </div>
        
        
-          <div data-aos="fade-right"  className={styles.right}>
+          <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  className={styles.right}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/images/photography.png`} />
           <div className={styles.description+' '+styles}>
             <div className={styles.buttoncenter}>
@@ -100,7 +100,7 @@ useEffect(()=>{
         <div className={styles.greysection}>
         </div>
         <div className={styles.flex}>
-          <div  className={styles.left}>
+          <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  className={styles.left}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/navigation.png`} />
                 <div className={styles.description}>
                   <div className={styles.buttoncenter1}>
@@ -111,7 +111,7 @@ useEffect(()=>{
                   </div>
                 </div>
           </div>
-          <div  className={styles.right}>
+          <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className={styles.right}>
               <motion.img className={styles.webimage} variants={imageVariants} src={`/photograpy.png`} />
                 <div className={styles.description+' '+styles}>
                   <div className={styles.buttoncenter1}>
