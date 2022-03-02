@@ -1,14 +1,14 @@
 [
     {
       "title": "Sliding Window Technique",
-      "text": "Nec vero pietas adversus deos nec quanta iis gratia debeatur sine explicatione naturae intellegi potest. Aliter enim explicari, quod quaeritur, non potest. Quaero igitur, quo modo hae tantae commendationes a natura profectae subito a sapientia relictae sint. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; Scio enim esse quosdam, qui quavis lingua philosophari possint; Nunc haec primum fortasse audientis servire debemus. Quarum cum una sit, qua mores conformari putantur, differo eam partem, quae quasi stirps ets huius quaestionis.",
+      "text": "Used for finding subarray in an array that satisfy given conditions. Maintain a subset of items as your window and resize it till you get what you are looking for. ",
       "id": 6,
-      "status":  "Published" ,
+      "status":  "Incomplete" ,
       "date": "Feb 16, 2022"
     },
     {
       "title": "Binary Search Tree",
-      "text": "Nec vero pietas adversus deos nec quanta iis gratia debeatur sine explicatione naturae intellegi potest. Aliter enim explicari, quod quaeritur, non potest. Quaero igitur, quo modo hae tantae commendationes a natura profectae subito a sapientia relictae sint. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; Scio enim esse quosdam, qui quavis lingua philosophari possint; Nunc haec primum fortasse audientis servire debemus. Quarum cum una sit, qua mores conformari putantur, differo eam partem, quae quasi stirps ets huius quaestionis.",
+      "text": "What is a Binary Search Tree a.k.a :- BST ? The root node should be greater than all the values on the left and lesser than the values on the right.To satisfy the BST property the right and the left children should as well follow the rule mentioned above.NB : People might say you should not have duplicates on the tree or the duplicates should appear on the left/right. ",
       "id": 5,
       "status":  "Incomplete" ,
       "date": "Feb 16, 2022"

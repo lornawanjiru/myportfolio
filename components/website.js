@@ -48,10 +48,10 @@ useEffect(()=>{
   return (
     
     <div className={styles.website}> 
-     <div className={styles.deskhide} >
+     <div>
      <div className={styles.websiteimg}>
        <FadeInSection> 
-          <div className={styles.blogtitle}><h1>My Work </h1></div> 
+          <div className={styles.webtitle}><h1>My Work </h1></div> 
       </FadeInSection>
      <div className={styles.flex}>
           <div data-aos="flip-left" className={styles.left}>
@@ -93,42 +93,7 @@ useEffect(()=>{
      </div> 
      </div>
      </div>
-     <div className={styles.showdesk}>
-        <FadeInSection> 
-          <div className={styles.websitetitle}><h2>My Work </h2></div> 
-        </FadeInSection>
-        <div className={styles.greysection}>
-        </div>
-        <div className={styles.flex}>
-          <div data-aos="flip-left"  className={styles.left}>
-          <motion.img className={styles.webimage} variants={imageVariants} src={`/navigation.png`} />
-                <div className={styles.description}>
-                  <div className={styles.buttoncenter1}>
-                  <div className={styles.buttons}>
-                      <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/Navigation'>View Code</a></button>
-                      <button className={styles.noselect+' '+ styles.blue}><a href='https://navigation-nine.vercel.app/'>Demo live</a></button>
-                  </div>
-                  </div>
-                </div>
-          </div>
-
-         
-
-          <div data-aos="flip-left" className={styles.right}>
-
-              <motion.img className={styles.webimage} variants={imageVariants} src={`/photograpy.png`} />
-                <div className={styles.description+' '+styles}>
-                  <div className={styles.buttoncenter1}>
-                  <div className={styles.buttons}>
-                      <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/photography'>View Code</a></button>
-                      <button className={styles.noselect+' '+ styles.blue}><a href='https://photography-ten.vercel.app/'>Demo live</a></button>
-                  </div>
-                  </div>
-                </div>
-          </div>
-        </div>
-       
-     </div> 
+     
       </div>
    
 )}

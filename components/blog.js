@@ -24,7 +24,7 @@ function FadeInSection(props) {
     );
   }
   
-function Website(){
+function Blog(){
  return(
     <div className={styles.website}>
       
@@ -37,4 +37,4 @@ function Website(){
       </div>
  )
 }
-export default Website
+export default Blog;

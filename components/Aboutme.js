@@ -60,26 +60,6 @@ const variants = {
         </div>
     </div>    
     <div className={styles.showdesk +' '+styles.aboutme}>
-     <div className={styles.bluesection}>
-        
-          <Marquee direction='right' gradientWidth={0} speed={5}>
-          <motion.img className={styles.imge} variants={imageVariants} src={`/html.png`} height={40}/>
-          <motion.img className={styles.imge} variants={imageVariants} src={`/css.png`} height={40} />
-          <motion.img className={styles.imge} variants={imageVariants} src={`/js.png`} height={40} />
-          <motion.img className={styles.imge} variants={imageVariants} src={`/nextjs.png`} height={40} />
-          <motion.img className={styles.imge} variants={imageVariants} src={`/react.png`} height={40} />
-        </Marquee>
-      
-      
-        <Marquee direction='left' gradientWidth={0} speed={5}>
-          <motion.img className={styles.imge} variants={imageVariants} src={`/html.png`} height={40}/>
-          <motion.img className={styles.imge} variants={imageVariants} src={`/css.png`} height={40} />
-          <motion.img className={styles.imge} variants={imageVariants} src={`/js.png`} height={60} />
-          <motion.img className={styles.imge} variants={imageVariants} src={`/nextjs.png`} height={60} />
-          <motion.img className={styles.imge} variants={imageVariants} src={`/react.png`} height={60} />
-        </Marquee>
-       
-      </div>
      <div className={styles.aboutdec}>
      <div className={styles.aboutbox}>
         <div className={styles.title}>
@@ -112,10 +92,8 @@ const variants = {
           
         </div>
       </div> 
-      <div className={styles.image}>
-     
+      <div className={styles.aboutimage}>
               <motion.img variants={imageVariants} src={`/me.png`} height={450} />
-     
       </div>
       </div>  
       

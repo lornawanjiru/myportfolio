@@ -26,7 +26,7 @@ const placeholderText = [
   { type: "heading1", text: "Hello Guest" },
   {
     type: "heading2",
-    text: "Thanks for visiting my tiny world."
+    text: "I am Lorna and this is my world."
   },
   
 ];
@@ -49,9 +49,9 @@ const container = {
       
       <div className={styles.landingpage} >
          
-        <div className={styles.showdesk }>      
-				<Image className={styles.landingImage}  src="/back.jpg" alt="" layout='fill' objectFit='cover' objectPosition='center'/> 
-        </div>
+        {/* <div className={styles.showdesk}>      
+			  	<Image className={styles.landingImage}  src="/back.jpg" alt="" layout='fill' objectFit='cover' objectPosition='center'/> 
+        </div> */}
         <div className={styles.biosection}>
           <motion.div
               className={styles.App}
@@ -68,7 +68,7 @@ const container = {
               
           </motion.div>
         </div>
-        <div className={styles.image+' '+styles.deskhide}>
+        <div className={styles.image}>
           <motion.img variants={imageVariants} src={`/about1.png`} height={400} />
         </div>
           

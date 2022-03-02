@@ -54,7 +54,7 @@ const Post = ({ post }) => {
   }, []);
 
   return (
-    <div className="container post">
+    <div className={styles.blogpost}>
       <motion.div initial="exit" animate="enter" exit="exit">
         <div>
         <motion.img  className={styles.resize} variants={imageVariants}  src={`/images/${post.id}.jpg`} />
@@ -82,6 +82,7 @@ const Post = ({ post }) => {
         }
         motion img{
           width: 100%;
+        }
         }
       `}</style>
     </div>

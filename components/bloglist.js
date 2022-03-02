@@ -85,6 +85,9 @@ const PostList = ({ posts }) => (
           }
         }
         @media (max-width: 1200px) {
+           .post{
+             padding : 10%;
+           }
            .posts {
             flex-flow:wrap;
             flex-direction:row;

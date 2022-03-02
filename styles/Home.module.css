@@ -128,6 +128,9 @@
 .resize{
   width: 100%;
 }
+.blogpost{
+  padding: 5%;
+}
 /* website section */
 .website{
   padding: 10% 0 0 0;
@@ -147,13 +150,7 @@
 .center{
     text-align: center;
 }
-.description{
-  
-  text-align: center;
-  font-size: 1.2em;
-  width: 80%;
-  
-}
+
 .buttoncenter{
   margin: 0;
   position: absolute;
@@ -197,10 +194,7 @@
 .dis{
   padding-top: 17%;
 }
-.five{
-  background-color: rgb(1, 1, 46) ;
-  padding: 5%;
-}
+
 .socialicons{
   display: flex;
  
@@ -264,6 +258,10 @@
   font-size: 16px;
   resize: none;
 }
+.description{
+  text-align: center;
+  font-size: 1.2em;
+}
 @media only screen and (min-width: 640px){
  
 /* image section */
@@ -324,7 +322,7 @@
   }
   /* Contacts */
   .five{
-    padding: 30%;
+    padding: 10%;
   }
 }
 @media only screen and (min-width: 840px){
@@ -343,154 +341,60 @@
 }
 @media only screen and (min-width: 1200px){
   .deskhide{
-    text-align: left;
-    padding: 2%;
-  }
- .landingpage{
-   padding: 0;
-   height: 100%;
- }
-  .showdesk{
-    display: inline;
-  }
-  /* Navigation */
-  .hidelogo{
-    font-size: .9em;
-    font-weight: 900;
-  }
-  .navmenu{
-    font-size: 1.1em;
-  }
-  .navmenu a:hover{
-    color: rgb(1, 1, 46);
-    font-weight: 600;
-    border-radius: 8px;
-    background-color: #eee;
-    box-shadow: none;
-  }
-
-  /* Landing page */
-.one{
-   position: relative;
-   width: 100vh;
-   height: 100vh;
-  }
-.landingImage{
-    width: 100px;
-    height: 100px;
-    z-index: -1;
-}
-
-.biosection{
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-}
-  /* layout */
-  .deskhide{
     display: none;
   }
-  .slide {
-    width: 100vw;
-    height: 100vh;
+  .showdesk{
+    display: inline;
+    overflow:auto;
   }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
+  /*langing page*/
+  .landingpage{
+    margin-top: 8%;
   }
-  .outerwrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  } 
-
-  
-  /* About me page */
-  
-  .bluesection{
-    background-color: rgb(1, 1, 46);
-    width:100vh; 
-    padding: 0;   
-    height:135px;
-    -webkit-transform-origin: left top;
-    -webkit-transform:rotate(-90deg) translateX(-100%);
+  .biosection{
+    margin-top: 8%;
   }
- .bluesection p{
-   font-size: 1.5em;
- }
- .imge{
-   height: 70px;
- }
- .aboutbox{
-   width: 80%;
- }
- .aboutdec{
-  border-radius: 8px;
-  background-color: #eee;
-   color: #272727;
-   margin-top: 0;
-   float: left;
-   text-align: left;
-   width: 60%;
-   height: 70%;
-   margin-left: 15%;
-   padding: 3%;
-   position: relative;
- }
- .aboutdec h1{
-   font-size: 3.0em;
- }
- .progress{
-   display: flex;
- }
-  .image{
-    position: fixed;
-    margin-top: 0.5%;
-    height: 60%;
+  /*About me section*/
+  .aboutbox{
+    width: 80%;
   }
-  .image img{
-    border-radius: 8px;
-    height: 100%;
-  }
-  .spac{
-    padding: 3%;
-  }
-  /* Website section */
-  .three{
-    background-color:  rgb(1, 1, 46);;
-  }
-  .websitetitle{
+  .aboutdec{
+   border-radius: 8px;
+   background-color: #eee;
+    color: #272727;
+    margin-top: 0;
+    float: left;
     text-align: left;
-    margin-top: 5%;
-    padding-left: 3%;
+    width: 60%;
+    height: 70%;
+    margin-left: 15%;
+    padding: 3%;
+    position: relative;
   }
-  .website{
-    padding: 0;
+  .aboutdec h1{
+    font-size: 3.0em;
+  }
+  .progress{
     display: flex;
   }
-  .webimage{
-    width: 100%;
-  }
-  .flex{
-    padding: 0%;
-   
-  }
-  .buttoncenter1{
-     margin-left: 20%;
-  }
-  .left{
+   .aboutimage{
+     position: absolute;
+     right: 10%;
+     margin-top: 2.3%;
+     height: 35%;
+   }
+   .aboutimage img{
+     border-radius: 8px;
+     height: 100%;
+   }
+   .spac{
+     padding: 3%;
+   }
+   /*Websites porfolio section*/
+   .webtitle{
+      margin-top: 35%;
+   }
+   .left{
     float: left;
     width: 46%;
   }
@@ -499,58 +403,20 @@
     width: 46%;
     padding-top: 0;
   }
-  .dis{
-    display: none;
-  }
-  .description{
-    margin-left: 10%;
-  }
-  .greysection{
-    background-color: rgb(1, 1, 46);
-    width:110vh; 
-    padding: 1%;   
-    height:1px;
-    -webkit-transform-origin: left top;
-    -webkit-transform:rotate(-90deg) translateX(-100%);
-  }
- .greysection p{
-   font-size: 1.2em;
- }
-  /* blogs images */
-  .resize{
-    width: 50%;
-  }
-  .websiteimg{
-    margin-bottom: 0;
-  }
-  .blogimg{
-    padding: 5%;
-    margin-top: 15%;
-  }
-  .blogtitle{
-    width: 200%;
-    
-  }
-  .blogtitle h2{
-    margin-top: 30%;
-  }
-  /* Contact  */
-  .five{
+  .bluesection{
     padding: 0;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 115%;
-    transform: translate(-50%, -50%);
-    margin: 0;
+    margin-top: 20%;
+     height: 150px;
   }
+  .posts{
+     padding: 1%;
+  }
+  /* Blogs*/
+  .blogpost{
+    padding: 10%;
+  }
+  /*My contact page*/
   .contact{
-    width: 40%;
-    position: fixed;
-    left: 30%;
-    top: 10%;
-  }
-  .socialicons{
-    margin-left: 0;
+    padding: 0 20% 0 20%;
   }
 }
