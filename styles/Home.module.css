@@ -199,9 +199,6 @@
   display: flex;
  
 }
-.icon{
-  padding: 2% 10% 0 0 ;
-}
 .formbutton {
   text-align: center;
 }
@@ -385,7 +382,7 @@
    }
    .aboutimage img{
      border-radius: 8px;
-     height: 100%;
+     
    }
    .spac{
      padding: 3%;
@@ -406,7 +403,7 @@
   .bluesection{
     padding: 0;
     margin-top: 20%;
-     height: 150px;
+    
   }
   .posts{
      padding: 1%;

@@ -65,7 +65,7 @@ const variants = {
         <div className={styles.title}>
           <h1>About me</h1>
           </div>
-          <p>Hello, I am Lorna Wanjiru, a Front-end Developer based in Nairobi, Kenya.  
+          <p>Hello, Am Lorna Wanjiru, a Front-end Developer based in Nairobi, Kenya.  
           </p>
           <p> 
             Thats just a gist about me. But who am i really?<br></br>
@@ -93,7 +93,7 @@ const variants = {
         </div>
       </div> 
       <div className={styles.aboutimage}>
-              <motion.img variants={imageVariants} src={`/me.png`} height={450} />
+              <motion.img variants={imageVariants} src={`/me.png`} height={430} />
       </div>
       </div>  
       
