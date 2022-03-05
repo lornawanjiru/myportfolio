@@ -1,6 +1,7 @@
 import React from "react";
 import ShortenText from "../../utils/ShortenText";
 import ToText from "../../utils/ToText";
+
 import {
   makeStyles,
   Avatar,
@@ -16,7 +17,6 @@ import {
   Divider,
   Chip,
 } from "@material-ui/core";
-import colors from "../../utils/colors.json";
 
 const styles = makeStyles((muiBaseTheme) => ({
   grid: {
@@ -153,7 +153,10 @@ export default function MediumCard(props) {
   const isOnline = ISTTime.getHours() >= 5 && ISTTime.getHours() <= 20;
 
   return (
+
     <Grid xs={12} sm={12} lg={4} className={classes.grid}>
+    
+    
       <Card className={classes.card}>
         <CardMedia className={classes.media} image={props?.thumbnail}>
           {/* <Chip
@@ -275,6 +278,8 @@ export default function MediumCard(props) {
           </Grid>
         </CardActions>
       </Card>
+     
     </Grid>
+   
   );
 }
