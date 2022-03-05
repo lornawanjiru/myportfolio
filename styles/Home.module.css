@@ -26,7 +26,7 @@
 } */
 .social{
   display: flex;
-  margin-left: 22%;
+  margin-left: 40%;
 }
 .icon{
   cursor: pointer;
@@ -198,6 +198,14 @@
 .socialicons{
   display: flex;
  
+}
+/* Blog section */
+.webcontainer{
+  padding: 3%;
+}
+/* contact section */
+.contact{
+  padding: 2.5%;
 }
 .formbutton {
   text-align: center;

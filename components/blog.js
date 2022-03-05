@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
-import post from '../data/blogs.json';
-import PostList from './bloglist';
+// import post from '../data/blogs.json';
+// import PostList from './bloglist';
+import Slider from './Blog/Slider';
 import React from 'react';
 
 
@@ -32,7 +33,7 @@ function Blog(){
           <div className={styles.blogtitle} ><h2>My Blogs </h2></div> 
         </FadeInSection>
         <div className={styles.webcontainer}> 
-            <PostList posts={post} />   
+            <Slider/>  
         </div>  
       </div>
  )

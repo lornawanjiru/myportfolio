@@ -1,6 +1,6 @@
 import React from "react";
-import ShortenText from "../utils/ShortenText";
-import ToText from "../utils/ToText";
+import ShortenText from "../../utils/ShortenText";
+import ToText from "../../utils/ToText";
 import {
   makeStyles,
   Avatar,
@@ -16,7 +16,7 @@ import {
   Divider,
   Chip,
 } from "@material-ui/core";
-import colors from "../utils/colors.json";
+import colors from "../../utils/colors.json";
 
 const styles = makeStyles((muiBaseTheme) => ({
   grid: {
@@ -156,12 +156,12 @@ export default function MediumCard(props) {
     <Grid xs={12} sm={12} lg={4} className={classes.grid}>
       <Card className={classes.card}>
         <CardMedia className={classes.media} image={props?.thumbnail}>
-          <Chip
+          {/* <Chip
             className={chipClasses.chip}
             label={props?.tag}
             size="small"
             style={{ backgroundColor: colors[props?.tagNo] }}
-          />
+          /> */}
           {isOnline ? (
             <StyledBadge
               overlap="circle"
@@ -177,7 +177,7 @@ export default function MediumCard(props) {
               }}
             >
               <Avatar
-                alt="sabesan sathananthan"
+                alt="Lorna"
                 className={classes.avatar}
                 src={props?.avatar}
                 component="a"
@@ -188,7 +188,7 @@ export default function MediumCard(props) {
             </StyledBadge>
           ) : (
             <Avatar
-              alt="sabesan sathananthan"
+              alt="lorna"
               className={classes.avatar}
               src={props?.avatar}
               component="a"
