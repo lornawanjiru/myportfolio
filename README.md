@@ -47,7 +47,7 @@ Apart from coding and being funny (or else i hope i am) I have written technical
 
 
 ---
-<p align="center"><a  href="https://www.buymeacoffee.com/lornamuchar?new=1" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a> </p>
+<p align="center"><a  href="https://www.buymeacoffee.com/lornamuchar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a> </p>
 <p align="center">
  © 2022 Lorna Wanjiru, all rights reserved. Made with ❤️ for a better web.
 </p>
