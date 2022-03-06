@@ -54,8 +54,8 @@ const variants = {
             <div className={styles.image}>
               <motion.img variants={imageVariants} src={`/me.png`} height={200} />
              </div>
-            <p> I am skilled in Javascript, HTML, CSS and a few js frameworks 
-              and am based in Nairobi, Kenya. </p> 
+            <p> I am skilled in Javascript, HTML, CSS and a few js frameworks.
+             </p> 
         </motion.div>
         </div>
     </div>    
