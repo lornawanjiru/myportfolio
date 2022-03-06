@@ -49,13 +49,12 @@ const variants = {
         <div className={styles.title}>
         <h1>In A Nutshell</h1>
         </div>
-        <p>Am Lorna Wanjiru, Am an experienced Front-end Developer with the wildest 
-            imaginations if it comes to designs. </p>
+        <p>Am Lorna Wanjiru, A motivated and experienced Front-end Developer. Consistently recognized as a hands-on and competent leader,skilled in
+          coordinating fast paced teams. </p>
             <div className={styles.image}>
               <motion.img variants={imageVariants} src={`/me.png`} height={200} />
              </div>
-            <p> I am passionate about technology and i love seeing things looking amazing.
-                I am based in Nairobi, Kenya. </p> 
+            <p> I am skilled in Javascript,HTML,CSS and a few js frameworks and am based in Nairobi, Kenya. </p> 
         </motion.div>
         </div>
     </div>    
@@ -69,9 +68,9 @@ const variants = {
           </p>
           <p> 
             Thats just a gist about me. But who am i really?<br></br>
-            Am a software Developer, mainly frontend developer who has done a number of project and contributes in a number of 
-            open source.
-            I have a weird liking of React js and i have built most of my projects with react.       
+            Experienced software engineer with a strong background in developing strategies for a diverse clientele. 
+            1 year of industry experience and i have being able to achieve concrete goals on a strict deadline. 
+            Strong skills in Javascript,HTML,CSS and a few js frameworks.      
           </p>
           
           <h2> My Language Status</h2>
