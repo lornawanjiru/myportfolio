@@ -30,7 +30,7 @@ function Blog(){
     <div className={styles.website}>
       
         <FadeInSection> 
-          <div className={styles.blogtitle} ><h2>My Blogs </h2></div> 
+        <h1 className={styles.title}>My Blogs </h1> 
         </FadeInSection>
         <div className={styles.webcontainer}> 
             <Slider/>  

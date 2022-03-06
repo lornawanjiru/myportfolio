@@ -185,7 +185,7 @@
   display: flex;
 }
 .right{
-  padding-top: 17%;
+  margin-top: 17%;
 }
 .blue:hover {
 	color: rgb(1, 1, 46);
@@ -407,6 +407,7 @@
     float: right;
     width: 46%;
     padding-top: 0;
+    margin-top: 0;
   }
   .bluesection{
     padding: 0;
