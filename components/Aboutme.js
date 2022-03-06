@@ -49,7 +49,7 @@ const variants = {
         <div className={styles.title}>
         <h1>In A Nutshell</h1>
         </div>
-        <p>Am Lorna Wanjiru, A motivated and experienced Front-end Developer. Consistently recognized as a hands-on and competent leader,skilled in
+        <p>Am Lorna Wanjiru, A motivated and experienced Front-end Developer. Consistently recognized as a  competent leader,skilled in
           coordinating fast paced teams. </p>
             <div className={styles.image}>
               <motion.img variants={imageVariants} src={`/me.png`} height={200} />
