@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Lorna Wanjiru</title>
         <meta name="description" content="My Portfolio" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo1.png" />
       </Head>
       <div className={styles.outerwrapper}>
           <div className={styles.wrapper}>
