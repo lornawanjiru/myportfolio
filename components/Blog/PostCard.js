@@ -1,7 +1,8 @@
 import React from "react";
 import ShortenText from "../../utils/ShortenText";
 import ToText from "../../utils/ToText";
-
+import { faUser, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   makeStyles,
   Avatar,
@@ -15,7 +16,6 @@ import {
   Link,
   CardActions,
   Divider,
-  Chip,
 } from "@material-ui/core";
 
 const styles = makeStyles((muiBaseTheme) => ({
@@ -105,19 +105,8 @@ const StyledBadge = withStyles((theme) => ({
   },
 }))(Badge);
 
-const styledChip = makeStyles((muiBaseTheme) => ({
-  chip: {
-    color: "#FFFFFF",
-    top: "0.9375rem",
-    right: "0.9375rem",
-    position: "absolute",
-    textTransform: "uppercase",
-  },
-}));
-
 export default function MediumCard(props) {
   const classes = styles();
-  const chipClasses = styledChip();
   const monthShortname = [
     "Jan",
     "Feb",
@@ -132,7 +121,7 @@ export default function MediumCard(props) {
     "Nov",
     "Dec",
   ];
-  const splitDate = props?.pubDate.split(" ");
+  const splitDate = props.pubDate.split(" ");
   const date = splitDate[0];
   const splitMonth = date.split("-");
   const finalDate =
@@ -142,30 +131,13 @@ export default function MediumCard(props) {
     "," +
     " " +
     splitMonth[0];
-
-  const currentTime = new Date();
-  const currentOffset = currentTime.getTimezoneOffset();
-  const ISTOffset = 330; // IST offset UTC +5:30
-  const ISTTime = new Date(
-    currentTime.getTime() + (ISTOffset + currentOffset) * 60000
-  );
-
-  const isOnline = ISTTime.getHours() >= 5 && ISTTime.getHours() <= 20;
+  const d = new Date();
 
   return (
-
     <Grid xs={12} sm={12} lg={4} className={classes.grid}>
-    
-    
       <Card className={classes.card}>
-        <CardMedia className={classes.media} image={props?.thumbnail}>
-          {/* <Chip
-            className={chipClasses.chip}
-            label={props?.tag}
-            size="small"
-            style={{ backgroundColor: colors[props?.tagNo] }}
-          /> */}
-          {isOnline ? (
+        <CardMedia className={classes.media} image={props.thumbnail}>
+          {d.getHours() >= 5 && d.getHours() <= 22 ? (
             <StyledBadge
               overlap="circle"
               anchorOrigin={{
@@ -180,20 +152,20 @@ export default function MediumCard(props) {
               }}
             >
               <Avatar
-                alt="Lorna"
+                alt="Lorna wanjiru"
                 className={classes.avatar}
-                src={props?.avatar}
+                src={props.avatar}
                 component="a"
                 varient="rounded"
-                href={props?.profilelink}
+                href={props.profilelink}
                 target="_blank"
               />
             </StyledBadge>
           ) : (
             <Avatar
-              alt="lorna"
+              alt="Lorna wanjiru"
               className={classes.avatar}
-              src={props?.avatar}
+              src={props.avatar}
               component="a"
               style={{
                 display: "inline-block",
@@ -201,7 +173,7 @@ export default function MediumCard(props) {
                 marginLeft: "1.5625rem",
               }}
               varient="rounded"
-              href={props?.profilelink}
+              href={props.profilelink}
               target="_blank"
             />
           )}
@@ -216,16 +188,16 @@ export default function MediumCard(props) {
         >
           <Typography className={classes.heading} variant={"h5"} gutterBottom>
             <Link
-              href={props?.link}
+              href={props.link}
               target="_blank"
               rel="noopener noreferrer"
               underline="none"
             >
-              {ShortenText(props?.title, 0, 75)}
+              {ShortenText(props.title, 0, 75)}
             </Link>
           </Typography>
           <Typography className={classes.subheading} variant="body1">
-            {ShortenText(ToText(props?.content), 0, 120) + "..."}
+            {ShortenText(ToText(props.content), 0, 120) + "..."}
           </Typography>
         </CardContent>
         <Divider className={classes.divider} />
@@ -242,16 +214,7 @@ export default function MediumCard(props) {
               variant="body1"
               gutterBottom
             >
-              <i
-                className="fad fa-user-edit"
-                style={{
-                  fontSize: "20px",
-                  "--fa-primary-color": "mediumpurple",
-                  "--fa-secondary-color": "orange",
-                  "--fa-secondary-opacity": "1.0",
-                }}
-              ></i>{" "}
-              {props?.author}
+              <FontAwesomeIcon icon={faUser} /> {props.author}
             </Typography>
           </Grid>
           <Grid>
@@ -265,21 +228,11 @@ export default function MediumCard(props) {
               }}
               gutterBottom
             >
-              <i
-                className="fad fa-calendar-alt"
-                style={{
-                  fontSize: "20px",
-                  "--fa-primary-color": "red",
-                  "--fa-secondary-color": "dimgray",
-                }}
-              ></i>{" "}
-              {finalDate}
+              <FontAwesomeIcon icon={faCalendarAlt} /> {finalDate}
             </Typography>
           </Grid>
         </CardActions>
       </Card>
-     
     </Grid>
-   
   );
 }
