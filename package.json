@@ -6,7 +6,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-   
   },
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
@@ -32,6 +31,7 @@
     "react-scroll": "^1.8.4",
     "react-scroll-motion": "^0.2.1",
     "react-smooth-list": "^1.0.2",
+    "sitemap": "^7.1.1",
     "three": "^0.137.5"
   },
   "devDependencies": {
