@@ -38,6 +38,7 @@ I am a newbie open source contributor but soon hoping to have deleted this cause
 Apart from coding and being funny (or else i hope i am) I have written technical articles which i also maintain.
 
   * [sliding Window Technique](https://lornamuchangi.medium.com/sliding-window-technique-c9191be113b5)
+  * [Why Next Js](https://lornamuchangi.medium.com/why-next-js-99b5584311c6)
 ---
 📈Github Stats
 
@@ -47,7 +48,7 @@ Apart from coding and being funny (or else i hope i am) I have written technical
 
 
 ---
-<p align="center"><a  href="https://www.buymeacoffee.com/lornamuchar?new=1" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a> </p>
+<p align="center"><a  href="https://www.buymeacoffee.com/lornamuchar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a> </p>
 <p align="center">
  © 2022 Lorna Wanjiru, all rights reserved. Made with ❤️ for a better web.
 </p>
