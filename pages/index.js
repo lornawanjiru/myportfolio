@@ -13,8 +13,11 @@ export default function Home() {
     <div className={styles.box}>
       <Head>
         <title>Lorna Wanjiru</title>
-        <meta name="description" content="My Portfolio" />
-        <meta name="robots" content="all" />
+        <meta name="description" content="Portfolio of an experienced and devoted frontend developer!" />
+        <meta property="og:title" content="Lorna Wanjiru" />
+        <meta property="og:description" content="Portfolio of an experienced and devoted frontend developer!" />
+        <meta property="og:url" content="https://www.lornawanjiru.xyz/" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/logo1.png" />
       </Head>
       <div className={styles.outerwrapper}>

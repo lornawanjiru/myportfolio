@@ -12,7 +12,7 @@ class MyApp extends App {
     const { Component, pageProps, router } = this.props;
     return (
       <Layout>
-        
+      
         <AnimatePresence exitBeforeEnter>
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
