@@ -16,10 +16,13 @@ export default function Home() {
         <meta name="description" content="Lorna Muchangi is an experienced and devoted frontend developer!" />
         <meta property="og:title" content="Lorna Muchangi" />
         <meta property="og:description" content="Lorna Wanjiru is an experienced and devoted frontend developer!" />
-        <meta property="og:url" content="https://www.lornawanjiru.xyz/" />
+        <meta property="og:url" content="https://lornawanjiru.xyz/" />
         <meta property="og:title" content="Lorna Muchangi"></meta>
         <meta property="og:locale" content="en-US"></meta>
         <meta property="og:site_name" content="Lorna Muchangi"></meta>
+        <meta name="robots" content="index,follow"></meta>
+        <meta name="googlebot" content="index,follow"></meta>
+        <link rel="canonical" href="https://lornawanjiru.xyz/"></link>
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:site" content="@lorna_muchangi"></meta>
