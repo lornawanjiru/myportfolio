@@ -55,7 +55,7 @@ useEffect(()=>{
       </FadeInSection>
      <div className={styles.flex}>
           <div data-aos="flip-left" className={styles.left}>
-          <motion.img className={styles.webimage} variants={imageVariants} src={`/images/navigation.png`} />
+          <motion.img className={styles.webimage} variants={imageVariants} src={`/navigation.png`} />
           <div className={styles.description}>
              <div className={styles.buttoncenter}>
              <div className={styles.buttons}>
@@ -68,7 +68,7 @@ useEffect(()=>{
        
        
           <div data-aos="flip-left"  className={styles.right}>
-          <motion.img className={styles.webimage} variants={imageVariants} src={`/images/photography.png`} />
+          <motion.img className={styles.webimage} variants={imageVariants} src={`/photography.png`} />
           <div className={styles.description+' '+styles}>
             <div className={styles.buttoncenter}>
             <div className={styles.buttons}>

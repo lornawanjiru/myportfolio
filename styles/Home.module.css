@@ -140,7 +140,7 @@
   padding: 2%;
 }
 .webimage{
-  width: 100%;
+  width: 85%;
   padding: 2%;
   padding-bottom: 5%;
 }
@@ -401,13 +401,17 @@
    }
    .left{
     float: left;
-    width: 46%;
+    width: 40%;
+    height: 40%;
   }
   .right{
     float: right;
-    width: 46%;
+    width: 40%;
     padding-top: 0;
-    margin-top: 1%;
+    margin-top: 0%;
+  }
+  .flex{
+    padding: 3%;
   }
   .bluesection{
     padding: 0;
