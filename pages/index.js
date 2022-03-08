@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <div className={styles.box}>
       <Head>
-        <title>Lorna Wanjiru</title>
-        <meta name="description" content="Lorna Wanjiru is an experienced and devoted frontend developer!" />
-        <meta property="og:title" content="Lorna Wanjiru" />
+        <title>Lorna Wanjiru Muchangi</title>
+        <meta name="description" content="Lorna Wanjiru Muchangi is an experienced and devoted frontend developer!" />
+        <meta property="og:title" content="Lorna Wanjiru Muchangi" />
         <meta property="og:description" content="Lorna Wanjiru is an experienced and devoted frontend developer!" />
         <meta property="og:url" content="https://www.lornawanjiru.xyz/" />
         <meta property="og:type" content="website" />
