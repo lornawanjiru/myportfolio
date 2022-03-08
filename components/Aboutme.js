@@ -70,8 +70,8 @@ const variants = {
           <p> 
             Thats just a gist about me. But who am i really?<br></br>
             Experienced software engineer with a strong background in developing strategies for a diverse clientele. 
-            1 year of industry experience and i have being able to achieve concrete goals on a strict deadline. 
-            Strong skills in Javascript,HTML,CSS and a few js frameworks.      
+            1 year of industry experience and I have being able to achieve concrete goals on a strict deadline. 
+            Strong skills in Javascript,HTML,CSS and javascript frameworks.      
           </p>
           
           <h2> My Language Status</h2>
