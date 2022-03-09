@@ -31,13 +31,13 @@ function Contact(){
             </p> 
             <form className={styles.form} ref={form} onSubmit={sendEmail}>
               <label htmlFor="fname">First Name</label>
-              <input type="text" className={styles.formtext} id="fname" name="firstname" placeholder="Your name.."/>
+              <input type="text" className={styles.formtext} id="fname" name="firstname" placeholder="Your name.." required/>
               <label htmlFor="lname">Last Name</label>
-              <input type="text" className={styles.formtext} id="lname" name="lastname" placeholder="Your last name.."/>
+              <input type="text" className={styles.formtext} id="lname" name="lastname" placeholder="Your last name.." required/>
               <label htmlFor="email">Email</label>
-              <input type="text" className={styles.formtext} id="email" name="email" placeholder="Your email.."/>
+              <input type="text" className={styles.formtext} id="email" name="email" placeholder="Your email.." required/>
               <label htmlFor="message">Text your message here</label>
-              <textarea className={styles.textarea} name="message">Some text...</textarea>
+              <textarea className={styles.textarea} name="message" required>Some text...</textarea>
               <div className={styles.formbutton}>
               <input type="submit" className={styles.submit} value="Submit"/>
               </div>  

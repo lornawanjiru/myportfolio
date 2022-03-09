@@ -21,6 +21,7 @@ export default function Home() {
         <meta property="og:locale" content="en-US"></meta>
         <meta property="og:site_name" content="Lorna Muchangi"></meta>
         <meta name="robots" content="index,follow"></meta>
+        <meta name="robots" content="all" />
         <meta name="googlebot" content="index,follow"></meta>
         <link rel="canonical" href="https://lornawanjiru.xyz/"></link>
         <meta property="og:type" content="website" />
