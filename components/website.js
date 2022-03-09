@@ -72,7 +72,7 @@ useEffect(()=>{
           <div data-aos="flip-left"  className={styles.right}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/photography.png`} />
           <div className={styles.description}>
-            <p> This web application was my first ever naext js application. I used this photography portfolio to help me learn and practice Next.js
+            <p> This web application was my first ever next js application. I used this photography portfolio to help me learn and practice Next.js
                  Its a simple site but I ensured I utilized the image optimization feature for the next.Js app.
             </p>
             <div className={styles.buttoncenter}>
