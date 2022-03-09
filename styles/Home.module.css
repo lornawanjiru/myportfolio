@@ -153,6 +153,9 @@
 .flex{
   margin-left: 10%;
 }
+.description p{
+  padding: 3%;
+}
 .left{
   width: 90%;
   border: 1px solid rgb(68, 68, 68);

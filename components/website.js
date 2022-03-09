@@ -57,6 +57,8 @@ useEffect(()=>{
           <div data-aos="flip-left" className={styles.left}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/navigation.png`} />
           <div className={styles.description}>
+            <p>The Navigation web application was a way for me to practice my navigation menu development.I always struggled with Nav bars and 
+              I figured developing a site that acts as a tutorial will help me practice. Developed using Next.Js framework.</p>
              <div className={styles.buttoncenter}>
              <div className={styles.buttons}>
                 <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/Navigation'>View Code</a></button>
@@ -69,7 +71,10 @@ useEffect(()=>{
        
           <div data-aos="flip-left"  className={styles.right}>
           <motion.img className={styles.webimage} variants={imageVariants} src={`/photography.png`} />
-          <div className={styles.description+' '+styles}>
+          <div className={styles.description}>
+            <p> This web application was my first ever naext js application. I used this photography portfolio to help me learn and practice Next.js
+                 Its a simple site but I ensured I utilized the image optimization feature for the next.Js app.
+            </p>
             <div className={styles.buttoncenter}>
             <div className={styles.buttons}>
                 <button className={styles.noselect+' '+ styles.blue}><a href='https://github.com/lornawanjiru/photography'>View Code</a></button>
